@@ -101,10 +101,10 @@ byte colPins[COLS] = {17,44,16,43,15,42,41,40,14,39,13,38}; //connect to the col
 
 Keypad kpd = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );
 
+bool debug = false;
 unsigned long loopCount;
 unsigned long startTime;
-String msg;
-bool debug = false;
+
 char schema = KEY_SCHEMA_DEFAULT;
 unsigned int prasedModifierKeys[5] = {0,0,0,0,0};
 
